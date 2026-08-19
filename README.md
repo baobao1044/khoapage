@@ -1,6 +1,6 @@
 # KHOA — đỉnh nóc kịch trần bay phấp phới
 
-Một trang web đùa về Khoa. Toàn bộ hiệu ứng được viết tay bằng JavaScript thuần, **không dùng một thư viện ngoài nào**, không CDN, không bundler. Mở thẳng `index.html` là chạy.
+Một trang web đùa hiền lành về Khoa — một wibu chính hiệu. Toàn bộ hiệu ứng được viết tay bằng JavaScript thuần, **không dùng một thư viện ngoài nào**, không CDN, không bundler. Mở thẳng `index.html` là chạy.
 
 **🔗 Xem trực tiếp: https://baobao1044.github.io/khoapage/**
 
@@ -13,7 +13,7 @@ Một trang web đùa về Khoa. Toàn bộ hiệu ứng được viết tay b�
 | Module | Nhiệm vụ |
 |---|---|
 | `fx/cosmos.js` | Tinh vân nhiều lớp, trường sao 3D bay xuyên, lưới phối cảnh synthwave, cực quang |
-| `fx/matrix.js` | Mưa ký tự Matrix, đổi màu theo từng khu vực, chế độ rave |
+| `fx/matrix.js` | Mưa ký tự katakana kiểu Matrix, đổi màu theo từng khu vực, chế độ rave |
 | `fx/text.js` | 8 hiệu ứng chữ: scramble, gõ máy, glitch tách màu RGB, sóng, gradient chạy, nổ tung, neon, xáo trộn 3D |
 | `fx/tilt.js` | Thẻ nghiêng 3D theo chuột, có chiều sâu từng lớp, viền neon xoay, nút hít chuột |
 | `fx/scroll.js` | Hiện dần khi cuộn, parallax, đếm số kiểu Việt (1.284.000), marquee, thanh tiến độ |
@@ -40,8 +40,8 @@ Toàn bộ hiệu ứng được gắn vào HTML bằng thuộc tính `data-*`, 
 - Gõ `khoa` — mưa chữ KHOA thay cho mưa Matrix, pháo hoa, mưa emoji
 - Giữ chuột trên nền — tạo lỗ đen hút các hạt
 - `M` — bật/tắt nhạc
-- Kéo "máy đo độ đỉnh" lên 100 — máy nổ
-- Bấm nút **TÔI LÀ KHOA 🫵** hai lần liên tiếp — mega boom
+- Kéo "máy đo độ wibu" lên 100 — máy nổ, Khoa isekai
+- Bấm nút **TÔI LÀ KHOA 🍥** hai lần liên tiếp — mega boom
 
 ## Hiệu năng và khả năng tiếp cận
 
@@ -78,4 +78,4 @@ CONTRACT.md       giao ước API giữa các module (mỗi module một tệp, 
 
 ## Ghi chú
 
-Trang này được dựng bằng 8 luồng xử lý song song, 0 thư viện ngoài, và một lượng đùa cợt vượt ngưỡng khuyến nghị. Mọi thông tin đều là bịa. Trừ đoạn Khoa đỉnh. Đoạn đó có thể cũng bịa.
+Trang này được dựng bằng 8 luồng xử lý song song, 0 thư viện ngoài, và rất nhiều thiện cảm dành cho hội mê anime. Bản đầu tiên đùa hơi cay nghiệt nên toàn bộ nội dung đã được viết lại cho hiền hơn. Mọi thông tin đều là bịa. Trừ đoạn Khoa mê anime. Đoạn đó thật.

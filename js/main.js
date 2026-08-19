@@ -68,9 +68,9 @@
   var BOOT_MSGS = [
     'Đang nạp độ đỉnh…',
     'Đang hiệu chỉnh nóc nhà…',
-    'Đang nâng trần lên cho vừa…',
+    'Đang tải danh sách anime… 1.284 bộ',
     'Đang thổi cho phấp phới…',
-    'Đang đánh thức Khoa… (thất bại)',
+    'Đang gọi Khoa… (Khoa đang xem tập cuối)',
     'Thôi kệ, vào luôn.'
   ];
 
@@ -145,7 +145,7 @@
     return { x: r.left + r.width / 2, y: r.top + r.height / 2 };
   }
 
-  var EMOJI = ['😎','🔥','💤','🧋','🏆','✨','💸','🫵','🎉','🥇','😴','🚀'];
+  var EMOJI = ['🍥','🌸','⛩️','🍜','✨','🎌','🗾','🎏','⭐','🍡','🐱','💮'];
 
   function celebrate(el, level) {
     var c = centerOf(el);
@@ -168,8 +168,8 @@
   /* ══════════════ 5. GẮN SỰ KIỆN GIAO DIỆN ══════════════ */
 
   var BOOM_LINES = [
-    'ĐỈNH NÓC!', 'KỊCH TRẦN!', 'BAY PHẤP PHỚI!', 'LEVEL MAX!',
-    'KHÔNG CÓ CỬA!', 'CHÁY MÁY RỒI!', 'QUÁ ĐỈNH KHOA ƠI!'
+    'ĐỈNH NÓC!', 'KỊCH TRẦN!', 'BAY PHẤP PHỚI!', 'SUGOI!!',
+    'NANI?!', 'KAWAII QUÁ!', 'QUÁ ĐỈNH KHOA ƠI!'
   ];
   var boomIdx = 0;
 
@@ -197,8 +197,8 @@
         var c = centerOf(btnMega);
         var line = clicks === 1 ? 'ĐÚNG RỒI ĐÓ KHOA!' :
                    clicks < 5   ? 'VẪN LÀ KHOA!' :
-                   clicks < 12  ? 'THÔI ĐỦ RỒI KHOA ƠI 😅' :
-                                  'KHOA BẤM HOÀI VẬY TRỜI 💀';
+                   clicks < 12  ? 'WIBU CHÍNH HIỆU LUÔN 🍥' :
+                                  'BẤM HOÀI VẬY KHOA ƠI 😭';
         safe(FX.burst, 'floatText', line, c.x, c.y - 40);
       });
     }
@@ -240,16 +240,16 @@
   /* ══════════════ 6. MÁY ĐO ĐỘ ĐỈNH ══════════════ */
 
   var METER_LABELS = [
-    [0,   'Chưa có gì. Đang ngủ.'],
-    [10,  'Bình thường như bao người'],
-    [25,  'Ừ cũng được đó'],
-    [40,  'Bắt đầu có mùi đỉnh'],
-    [55,  'Đỉnh rồi đấy, khá lắm'],
-    [70,  'ĐỈNH! Trần nhà bắt đầu rung'],
-    [82,  'ĐỈNH NÓC! Ngói bay hết rồi'],
-    [92,  'KỊCH TRẦN! Hàng xóm gọi công an'],
-    [99,  'BAY PHẤP PHỚI TRONG VŨ TRỤ 🌌'],
-    [100, '⚠️ MÁY ĐO ĐÃ NỔ. KHOA THẮNG.']
+    [0,   'Chưa xem bộ nào. Còn kịp.'],
+    [10,  'Có biết Doraemon là ai'],
+    [25,  'Xem xong Naruto rồi đó'],
+    [40,  'Bắt đầu phân biệt được từng mùa'],
+    [55,  'Đã có một waifu chính thức'],
+    [70,  'WIBU! Thuộc luôn cả nhạc kết'],
+    [82,  'WIBU NÓC! Kệ figure sắp không đủ chỗ'],
+    [92,  'KỊCH TRẦN! Nói chuyện tự chêm tiếng Nhật'],
+    [99,  'BAY PHẤP PHỚI SANG THẾ GIỚI KHÁC 🌸'],
+    [100, '⚠️ MÁY ĐO ĐÃ NỔ. KHOA ISEKAI RỒI.']
   ];
 
   function labelFor(v) {
@@ -283,7 +283,7 @@
           maxedAt = now;
           celebrate(input, 2);
           var c = centerOf(input);
-          safe(FX.burst, 'floatText', 'KỊCH TRẦN THẬT RỒI!', c.x, c.y - 60);
+          safe(FX.burst, 'floatText', 'ISEKAI THẬT RỒI!', c.x, c.y - 60);
         }
       }
     }
