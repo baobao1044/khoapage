@@ -29,7 +29,14 @@
 
 *, *::before, *::after { box-sizing: border-box; }
 
-html { scroll-behavior: smooth; }
+html {
+  scroll-behavior: smooth;
+  /* Chặn cuộn ngang ở gốc. Dùng `clip` chứ không `hidden`: clip không tạo
+     scroll container nên không phá position:sticky, và không như
+     overflow-x:hidden trên <body>, nó có hiệu lực cả trên Safari iOS. */
+  overflow-x: hidden;
+  overflow-x: clip;
+}
 
 body {
   margin: 0;
@@ -177,7 +184,8 @@ kbd {
 
 .hero__halo {
   position: absolute;
-  width: min(900px, 120vw); aspect-ratio: 1;
+  /* 120vw sẽ rộng hơn màn hình trên điện thoại và làm trang tràn ngang */
+  width: min(900px, 94vw); aspect-ratio: 1;
   border-radius: 50%;
   background: radial-gradient(circle, color-mix(in srgb, var(--accent) 26%, transparent), transparent 62%);
   filter: blur(38px);
